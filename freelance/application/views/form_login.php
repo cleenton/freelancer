@@ -73,15 +73,17 @@
 			.button1{
 				font-family: 'Times New Roman', Times, serif; 
 				font-size: 12px; 
-				text-align: right; 
-				width:130%
+				text-align: right;
+				margin-left: 5px; 
+				width:110%
 			}
 
 			.button2{
 				font-family: 'Times New Roman', Times, serif; 
 				font-size: 12px; 
-				text-align: right; 
-				width:132%
+				text-align: right;
+				margin-left: 5px; 
+				width:110%
 			}
 
 			.div3{
@@ -103,8 +105,9 @@
 	<!-- Header -->
 	<div>
 		<h6 style="margin: 5%; font-family: 'Times New Roman', Times, serif">< Kioson</h6>
-		<img src="https://www.kioson.com/assets/images/logo-kioson1.png" alt="" width="100%" height="180px">
+		<img src="https://www.kioson.com//assets/images/kcp/KCP-KHOERON.png"alt="" width="100%" height="227px">
 		<h4 class="text1">#SaatnyaBerubah</h4>
+		
 	</div>
 
 	<!-- Body -->

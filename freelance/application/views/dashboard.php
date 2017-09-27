@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=375, height=200">
   <link rel="stylesheet" 
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
             integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
@@ -22,6 +22,28 @@
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <style>
+
+        
+        .btn-warning{
+            width : 100%;
+            margin-bottom: 20px;
+            background-color: #ffbfbf;
+            border: 0px ;
+            
+        }
+        .btn-danger{
+            width : 100%;
+            background-color: #ff8a4c;
+            border: 0px ;
+        }
+        .warnatext1 {      
+              color: #ff8a4c; 
+            }
+        .warnatext2 {      
+            color: #ffbfbf; 
+        }
+        </style>
 </head>
     <body>
 
@@ -43,20 +65,15 @@
 
 
 
-  <nav class="panel" style="background-color:lightblue; border-radius:0 padding-left: 200px;;">
- 
-    
-
-  
-<div class="container-fluid">
-<H6 style="color: white; text-align: center; margin-top: 20px; margin-bottom:20px;">Nikmati Manfaat Menjadi Freelancer Kioson ></H6>
-<button class="btn btn-warning" style="width : 100%; margin-bottom: 20px;"><?php echo anchor('auth/login', 'Masuk');  ?></button>
-</div>
-
+<nav class="panel" style="background-color:#35c7dd; border-radius:0 padding-left: 200px;border-radius: 10px;"> 
+    <div class="container-fluid">
+    <H6 style="color: white; text-align: center; margin-top: 20px; margin-bottom:20px;">Nikmati Manfaat Menjadi Freelancer Kioson</H6>
+    <?php echo anchor('auth/login', '<button class="btn btn-warning"><h5 class="warnatext1">Masuk</h5></button>');  ?>
+    </div>
 </nav>
 
 <div class="container">
-<button class="btn btn-warning" style="width : 100%;"><?php echo anchor('auth/form_register', 'daftar');  ?></button>
+<?php echo anchor('auth/form_register', '<button class="btn btn-danger"><h5 class="warnatext2">Daftar Freelancer</h5></button>');  ?>
 </div>
 </div>
 </div>

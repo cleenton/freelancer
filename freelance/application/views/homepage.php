@@ -102,7 +102,7 @@
 
 <!-- Thumbnail Pertama         -->
     <div class="col-xs-12" style="margin-top: -250px">
-        <div class="container-fluid" style="border: 1px solid grey; border-radius: 10px; background-color: #ffffff" >
+        <div class="container-fluid" style="border: 1px solid lightgrey; border-radius: 10px; background-color: #ffffff" >
   
           <div class="row">
               <div class="col-xs-4">
@@ -126,7 +126,7 @@
                         <div class="col-xs-12">
                            <div class="row">
                               ID Freelancer : <?php foreach($data as $b){echo $b->id ;}?> &nbsp
-                              <?php echo anchor('content/profile', 'kelola');  ?>
+                              <?php echo anchor('content/profile', '<p style="color: rgb(255, 153, 0);">kelola</p>');  ?>
                            </div>
                         </div>
                         </div>
@@ -139,7 +139,7 @@
 
 
 <!-- Thumbnail Kedua -->
-    <div class="col-xs-12" style="border: 1px solid grey; border-radius: 10px; background-color: #ffffff; margin-top: 5px">
+    <div class="col-xs-12" style="border: 1px solid lightgrey; border-radius: 10px; background-color: #ffffff; margin-top: 5px">
           <div class="row">
               <div class="col-xs-4">
                     <div class="container-fluid" style="text-align: center; padding: 5px ;">
@@ -151,7 +151,7 @@
                            Transaksi
                         </div>
                         <div class="col-xs-12">
-                        <?php echo anchor('content/transaksi', 'kelola');  ?>
+                        <?php echo anchor('content/transaksi', '<p style="color: rgb(255, 153, 0);">kelola</p>');  ?>
                         </div>
                         </div>
                     </div>
@@ -169,7 +169,7 @@
                            </div>
                         </div>
                         <div class="col-xs-12">
-                        <?php echo anchor('content/kios', 'kelola');  ?>
+                        <?php echo anchor('content/kios', '<p style="color: rgb(255, 153, 0);">kelola</p>');  ?>
                         </div>
                         </div>
                     </div>
@@ -189,7 +189,7 @@
                           </div>
                         </div>
                         <div class="col-xs-12">
-                        <?php echo anchor('content/komisi', 'kelola');  ?>
+                        <?php echo anchor('content/komisi', '<p style="color: rgb(255, 153, 0);">kelola</p>');  ?>
                         </div>
                         </div>
                     </div>
@@ -201,7 +201,7 @@
 
 <!-- Transfer Saldo Dan Bantuan -->
 
-    <div class="col-xs-12" style="border: 1px solid grey; border-radius: 10px; background-color: #ffffff; margin-top: 5px">
+    <div class="col-xs-12" style="border: 1px solid lightgrey; border-radius: 10px; background-color: #ffffff; margin-top: 5px">
           <div class="row">
               
               <div class="col-xs-12">
