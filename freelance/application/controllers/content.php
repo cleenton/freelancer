@@ -44,5 +44,16 @@ function kios(){
     $this->load->view('form_kios',$get);
 }
 
+function transaksi(){
+    $this->load->model('model_user');
+    $get['data']=$this->model_user->get_transaksi()->result();
+    $this->load->view('form_transaksi',$get);
+}
+
+function komisi(){
+    $this->load->model('model_user');
+    $get['data']=$this->model_user->get_transaksi()->result();
+    $this->load->view('form_komisi',$get);
+}
 
 }

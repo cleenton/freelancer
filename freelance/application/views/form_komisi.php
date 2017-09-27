@@ -43,18 +43,17 @@
 </div>
 
 <table class="table table-bordered">
-    <tr><th>id</th><th>Nama</th><th>Alamat</th><th>Saldo</th><th>ID Freelancer</th></tr>
+    <tr><th>ID Freelancer</th><th>ID Transaksi</th><th>Komisi</th><th>Tanggal Transaksi</th></tr>
 
 <?php
 
 echo "<hr>";
 foreach($data as $b){
     echo "<tr>
-    <td>$b->id</td>
-    <td>$b->name</td>
-    <td>$b->address</td>
-    <td>$b->saldo</td>
     <td>$b->freelancer_id</td>
+    <td>$b->id</td>
+    <td>$b->commision</td>
+    <td>$b->transaction_date</td>
 
     </tr>";
 }

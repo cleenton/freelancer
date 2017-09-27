@@ -26,4 +26,8 @@ class model_user extends CI_Model{
         $kcp = $this->db->get('tb_kios');
         return $kcp;
     }
+    function get_transaksi(){
+        $transaksi = $this->db->get('tb_transaction');
+        return $transaksi;
+    }
 }
