@@ -1,49 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" 
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
-            crossorigin="anonymous">
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <style>
-          /* Always set the map height explicitly to define the size of the div
-           * element that contains the map. */
-          #map {
-            height: 75%;
-          }
-          /* Optional: Makes the sample page fill the window. */
-          html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-          }
-
-            #locationField {
-                text-align: center;
-                width: 100%;
-            }
-
-            .kelola {
-              white-space: nowrap; 
-              text-align: left; 
-              font-style: normal; 
-              text-decoration: none; 
-              color: rgb(255, 153, 0); 
-              visibility: visible;
-            }
-
-            .btn-dark {
-              background-color: grey;
-            }
-        </style>
-</head>
-    <body >
-
 <!-- Header Logo Kioson And Dropdown -->
     <div class="col-xs-12" style="background-color: #ffffff">  
             <div class="container-fluid">
@@ -239,6 +193,7 @@
           center: {lat: -6.2196, lng: 106.8326},
           zoom: 16
         }
+        
         
       };
 

@@ -5,7 +5,7 @@ class model_user extends CI_Model{
 
         $check = $this->db->get_where('tb_user',array('email' => $email, 'password'=> $password));
         if($check->num_rows()>0){
-            return 1;
+            return $check;
         }
         else{
             return 0;
@@ -13,9 +13,10 @@ class model_user extends CI_Model{
 
     }
 
-    function get_freelancer(){
-        $free = $this->db->get('tb_freelancer');
-        return $free;
+    function get_freelancer($user_id){
+        $this->db->where('user_id', $user_id);
+        $user = $this->db->get('tb_freelancer');
+        return $user;
     }
 
     function edit_freelancer($id){

@@ -2,15 +2,22 @@
 class auth extends CI_Controller{
     
     function login(){
+        $this->load->view('header');
         $this->load->model('model_user');
         if(isset($_POST['submit'])){
             $email = $this->input->post('email');
             $password =md5($this->input->post('password'));
 
-            $hasil = $this->model_user->login($email,$password);
-            if($hasil == 1)
+            $hasil = $this->model_user->login($email,$password)->result_array();
+            if($hasil)
             {
-                $this->session->set_userdata(array('status_login' => 'oke'));
+                foreach ($hasil as $value) {
+                    $session = array(
+                        'status_login' => 'oke',
+                        'id_user' => $value['id']
+                    );
+                    $this->session->set_userdata($session);
+                }
                 redirect('content/welcoming');
             }
             else
@@ -30,6 +37,7 @@ class auth extends CI_Controller{
     }
 
     function form_register(){
+        $this->load->view('header');
         $this->load->view('register');
     }
 
@@ -47,6 +55,7 @@ class auth extends CI_Controller{
     }
 
     function otp(){
+        $this->load->view('header');
         $this->load->view('otp');
 
     }
