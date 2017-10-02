@@ -53,8 +53,9 @@ function kios(){
 
 function transaksi(){
     $this->load->view('header');
+    $user_id = $this->session->userdata('id_user');
     $this->load->model('model_user');
-    $get['data']=$this->model_user->get_transaksi()->result();
+    $get['data']=$this->model_user->get_transaksi($user_id)->result();
     $this->load->view('form_transaksi',$get);
 }
 

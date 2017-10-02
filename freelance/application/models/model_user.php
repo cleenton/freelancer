@@ -31,4 +31,13 @@ class model_user extends CI_Model{
         $transaksi = $this->db->get('tb_transaction');
         return $transaksi;
     }
+    function get_saldo(){
+        $saldo = $this->db->get('tb_top_up');
+        return $saldo;
+    }
+    function get_transfer(){
+        $transfer = $this->db->get('tb_kios');
+        return $transfer;
+    }
+    
 }

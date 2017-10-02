@@ -29,6 +29,7 @@
 
         <style>
 
+
         /* Always set the map height explicitly to define the size of the div
            * element that contains the map. */
            #map {
@@ -44,6 +45,12 @@
             #locationField {
                 text-align: center;
                 width: 100%;
+            }
+
+            .tengah{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             .kelola {
@@ -151,7 +158,55 @@
 				text-align: center; 
 				margin-bottom: 10%; 
 				font-size: 10px
-			}
+            }
+            
+
+            .nol{
+                background-color: blue;
+                height: 170px;
+            }
+
+            .text1{
+                padding : 8% 0 0 5%;
+                color : white;
+                font-size : 18px;
+            }
+
+            .jarak{
+                margin-top: 8%;
+                margin-left: 8%;
+            }
+
+            .text2{
+                text-align: center;
+                padding-top : 5%;
+                color : white;
+                font-size : 15px;
+                margin-top : 3%;
+            }
+
+            .abuabu{
+                background-color: #F0EBEB;
+                height: 497px;
+            }
+
+            .satu{
+                position: absolute;
+                background-color: white;
+                border-radius: 5px;
+                height: 368px;
+                width: 90%;
+                top: 27%;
+                margin-left: 5%;
+            }
+
+            .buttonwaris{
+                width:100%;
+                font-size: 100%;
+                height : 40px;
+                margin-top: 10%;
+            }
+
         </style>
 </head>
 <body>

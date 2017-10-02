@@ -8,9 +8,11 @@
         <img alt="Brand" src="https://www.kioson.com/assets/images/logo-kioson1.png" width="100" height="30">  
       </a>
     </div>
-    <?php echo anchor('auth/logout', 'logout');  ?>
+    <div style="margin-top: -30px; margin-left:80%; position:absolute;">
+    <?php echo anchor('auth/logout', 'logout');  ?></div>
 </div>
 </nav>
+</div>
 </div>
 
 <?php

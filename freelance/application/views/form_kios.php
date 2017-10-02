@@ -8,15 +8,15 @@
         <img alt="Brand" src="https://www.kioson.com/assets/images/logo-kioson1.png" width="100" height="30">  
       </a>
     </div>
-    <div class="navbar-right" style="padding-right: 30px; padding-top: 15px;">
-    <?php echo anchor('auth/logout', 'logout');  ?>
+    <div style="margin-top: -30px; margin-left:80%; position:absolute;">
+    <?php echo anchor('auth/logout', 'logout');  ?></div>
 </div>
 </nav>
 </div>
 </div>
 
 <table class="table table-bordered">
-    <tr><th>id</th><th>Nama</th><th>Alamat</th><th>Saldo</th><th>ID Freelancer</th></tr>
+    <tr><th>id</th><th>Nama</th><th>Alamat</th><th>Saldo</th></tr>
 
 <?php
 
@@ -27,7 +27,6 @@ foreach($data as $b){
     <td>$b->name</td>
     <td>$b->address</td>
     <td>$b->saldo</td>
-    <td>$b->freelancer_id</td>
 
     </tr>";
 }

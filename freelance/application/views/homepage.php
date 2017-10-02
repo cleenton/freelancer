@@ -36,7 +36,7 @@
                        
                         </div>
                         <div class="col-xs-6">
-                          <button class="btn btn-dark" style="float: right; color: #ffffff; margin: 10px 0px 10px 0px" > <label> Isi Saldo + </label></button>  
+                        <?php echo anchor('saldo/isisaldo', '<button class="btn btn-dark" style="float: right; color: #ffffff; margin: 10px 0px 10px 0px" > <label> Isi Saldo + </label></button>');  ?>  
                         </div>
                     </div>
             </div>
@@ -162,7 +162,7 @@
                     <div class="container-fluid" style="text-align: center; padding: 5px ;">
                       <div class="row">
                         <div class="col-xs-12">
-                           <button class="btn btn-warning" style="width:100%;margin-bottom: 5px">Transfer Saldo</button> 
+                        <?php echo anchor('saldo/transfersaldo','<button class="btn btn-warning" style="width:100%;margin-bottom: 5px">Transfer Saldo</button>');  ?> 
                         </div>
 
                         <div class="col-xs-12">

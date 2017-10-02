@@ -5,7 +5,7 @@
 	<!-- Header -->
 	<div>
 		<h6 style="margin: 5%; font-family: 'Times New Roman', Times, serif">< Kioson</h6>
-		<img src="https://www.kioson.com//assets/images/kcp/KCP-KHOERON.png"alt="" width="100%" height="227px">
+		<img src="https://www.kioson.com//assets/images/kcp/KCP-KHOERON.png"alt="" width="100%" height="150px">
 		<h4 class="text1">#SaatnyaBerubah</h4>
 		
 	</div>
@@ -36,7 +36,7 @@
 			</div>
 			<div style="margin-top: 15%">
 				<h6 class="text2">PASSWORD / KATA SANDI</h6>
-				<input type="text" name="password" placeholder="Masukan Kata Sandi disini" style="border: none; width: 100%; font-size: 75%">
+				<input type="password" name="password" placeholder="Masukan Kata Sandi disini" style="border: none; width: 100%; font-size: 75%">
 				<hr style="margin-top: 5%">
 			</div>
 			
